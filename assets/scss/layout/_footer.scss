@@ -1,3 +1,103 @@
 .footer {
-  
+  border-top: 4px solid $color-red;
+  padding-top: 60px;
+
+  @include media('lg') {
+    border-top: 2px solid $color-red;
+    padding-top: 20px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+
+    @include media('lg') {
+      gap: 24px;
+    }
+  }
+
+  &_top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    @include media('lg') {
+      flex-direction: column;
+    }
+
+    &_right {
+      display: flex;
+      align-items: end;
+      flex-direction: column;
+      gap: 32px;
+
+      @include media('lg') {
+        align-items: center;
+        gap: 25px;
+      }
+    }
+
+    span {
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 100%;
+      color: $color-grey;
+
+      @include media('lg') {
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      @include media('lg') {
+        gap: 30px;
+      }
+
+      a {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 100%;
+        color: $color-white;
+
+        @include media('lg') {
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .end_text {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    color: $color-grey;
+
+    @include media('lg') {
+      font-size: 14px;
+    }
+  }
+
+  .logo {
+    width: 552px;
+
+    @include media('lg') {
+      width: 305px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
 }

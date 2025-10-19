@@ -27,6 +27,7 @@ body {
   font-family: $font-Gilroy;
   font-style: normal;
   font-display: swap;
+  background: $color-dark;
 }
 
 input, textarea {
@@ -74,4 +75,19 @@ p, h1, h2, h3, h4, h5, h6 {
   @include media('lg') {
     margin-top: 60px;
   }
+}
+
+.red_btn {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 10px;
+  background: $color-red;
+  color: $color-white;
+  width: 237px;
 }

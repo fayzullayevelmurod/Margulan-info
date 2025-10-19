@@ -1,3 +1,17 @@
+// burger
+let burger = document.querySelector('.burger');
+let headerMenu = document.querySelector('.header_right');
+let headerMenuClose = document.querySelector('.header_right_close');
+
+burger.addEventListener('click', ()=> {
+  headerMenu.classList.add('active')
+})
+
+headerMenuClose.addEventListener('click', ()=> {
+  headerMenu.classList.remove('active')
+})
+// burger
+
 
 let swiper = new Swiper(".treatmentsSwiper", {
   slidesPerView: 1.10,

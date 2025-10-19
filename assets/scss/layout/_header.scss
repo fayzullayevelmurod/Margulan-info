@@ -1,3 +1,101 @@
 .header {
-  
+  padding: 37px 0;
+
+  @include media('lg') {
+    padding: 20px 0;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 362px;
+
+    @include media('md') {
+      width: 160px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &_right {
+    display: flex;
+    align-items: center;
+    gap: 140px;
+    transition: .3s ease;
+
+    @include media('xl') {
+      gap: 40px;
+    }
+
+    @include media('lg') {
+      position: fixed;
+      left: -100%;
+      top: 0;
+      background: $color-dark;
+      flex-direction: column;
+      padding: 60px 20px;
+      width: 100%;
+    }
+
+    &_close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: none;
+
+      @include media ('lg') {
+        display: flex;
+      }
+    }
+
+    &.active {
+      left: 0;
+    }
+
+    .red_btn {
+      @include media('xs') {
+        width: 100%;
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include media('lg') {
+      flex-direction: column;
+    }
+
+    a {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 100%;
+      color: $color-white;
+      transition: .3s ease;
+
+      &:hover {
+        color: $color-red;
+      }
+
+      &.active {
+        color: $color-red;
+      }
+    }
+  }
+
+  .burger {
+    display: none;
+
+    @include media('lg') {
+      display: flex;
+    }
+  }
 }
