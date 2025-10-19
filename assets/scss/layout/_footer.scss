@@ -67,10 +67,15 @@
         font-size: 22px;
         line-height: 100%;
         color: $color-white;
+        transition: .3s ease;
 
         @include media('lg') {
           font-size: 14px;
           text-align: center;
+        }
+
+        &:hover {
+          color: $color-red;
         }
       }
     }

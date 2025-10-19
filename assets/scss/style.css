@@ -422,6 +422,15 @@ p, h1, h2, h3, h4, h5, h6 {
   background: #FF1E1E;
   color: #FFFFFF;
   width: 237px;
+  transition: 0.3s ease;
+}
+.red_btn:hover {
+  box-shadow: 0 0 15px #FF1E1E, 0 0 30px #FF1E1E, 0 0 45px rgba(255, 30, 30, 0.8);
+  transform: translateY(-2px);
+}
+.red_btn:active {
+  box-shadow: inset 0 0 12px rgba(255, 30, 30, 0.8), 0 0 8px rgba(255, 30, 30, 0.5);
+  transform: translateY(1px);
 }
 
 .header {
@@ -688,6 +697,99 @@ p, h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
   }
 }
+.privacy_policy .accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media (max-width: 1024px) {
+  .privacy_policy .accordion {
+    gap: 12px;
+  }
+}
+.privacy_policy .accordion .item {
+  border-bottom: 0.5px solid #FFEAEA;
+  padding-bottom: 24px;
+}
+@media (max-width: 1024px) {
+  .privacy_policy .accordion .item {
+    padding-bottom: 12px;
+  }
+}
+.privacy_policy .accordion .accordion_btn {
+  width: 100%;
+  position: relative;
+  padding-right: 20px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  color: #E6E6E6;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+}
+.privacy_policy .accordion .accordion_btn span {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #FFFFFF;
+  background: #FF1E1E;
+}
+@media (max-width: 1024px) {
+  .privacy_policy .accordion .accordion_btn span {
+    font-size: 17px;
+    width: 24px;
+    height: 24px;
+  }
+}
+@media (max-width: 1024px) {
+  .privacy_policy .accordion .accordion_btn {
+    font-size: 16px;
+    gap: 10px;
+  }
+}
+.privacy_policy .accordion .accordion_btn svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.privacy_policy .accordion .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+.privacy_policy .accordion .content_text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 16px;
+}
+@media (max-width: 1024px) {
+  .privacy_policy .accordion .content_text {
+    gap: 16px;
+  }
+}
+.privacy_policy .accordion .content p {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 100%;
+  color: #E6E6E6;
+}
+@media (max-width: 1024px) {
+  .privacy_policy .accordion .content p {
+    font-size: 16px;
+  }
+}
 
 .footer {
   border-top: 4px solid #FF1E1E;
@@ -761,12 +863,16 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 22px;
   line-height: 100%;
   color: #FFFFFF;
+  transition: 0.3s ease;
 }
 @media (max-width: 1024px) {
   .footer_top ul a {
     font-size: 14px;
     text-align: center;
   }
+}
+.footer_top ul a:hover {
+  color: #FF1E1E;
 }
 .footer .end_text {
   font-weight: 300;
