@@ -51,6 +51,11 @@
       line-height: 20px;
       color: $color-grey-3;
 
+
+      &::placeholder {
+        color: $color-grey-3;
+      }
+
       @include media('lg') {
         height: 40px;
       }

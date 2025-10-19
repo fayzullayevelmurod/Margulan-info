@@ -574,6 +574,12 @@ p, h1, h2, h3, h4, h5, h6 {
   line-height: 20px;
   color: #AFAFAF;
 }
+.contact form input::-moz-placeholder {
+  color: #AFAFAF;
+}
+.contact form input::placeholder {
+  color: #AFAFAF;
+}
 @media (max-width: 1024px) {
   .contact form input {
     height: 40px;
@@ -592,6 +598,94 @@ p, h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1024px) {
   .contact form button {
     height: 40px;
+  }
+}
+
+.privacy_policy {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 28px;
+}
+.privacy_policy_in {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+@media (max-width: 1024px) {
+  .privacy_policy_in {
+    gap: 20px;
+  }
+}
+.privacy_policy h3 {
+  font-weight: 1000;
+  font-size: 60px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FF1E1E;
+  margin-bottom: 48px;
+}
+@media (max-width: 1024px) {
+  .privacy_policy h3 {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
+}
+.privacy_policy_block h6 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  color: #E6E6E6;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+.privacy_policy_block h6 span {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-weight: 700;
+  font-size: 28.88px;
+  line-height: 100%;
+  color: #FFFFFF;
+  background: #FF1E1E;
+}
+@media (max-width: 1024px) {
+  .privacy_policy_block h6 span {
+    font-size: 17px;
+    width: 24px;
+    height: 24px;
+  }
+}
+@media (max-width: 1024px) {
+  .privacy_policy_block h6 {
+    font-size: 16px;
+    gap: 10px;
+  }
+}
+.privacy_policy_block ul span {
+  display: block;
+  margin-bottom: 24px;
+}
+@media (max-width: 1024px) {
+  .privacy_policy_block ul span {
+    margin-bottom: 16px;
+  }
+}
+.privacy_policy_block ul li, .privacy_policy_block ul span {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 100%;
+  color: #E6E6E6;
+}
+@media (max-width: 1024px) {
+  .privacy_policy_block ul li, .privacy_policy_block ul span {
+    font-size: 16px;
   }
 }
 
