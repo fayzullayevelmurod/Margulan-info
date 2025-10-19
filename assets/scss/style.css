@@ -473,10 +473,12 @@ p, h1, h2, h3, h4, h5, h6 {
     position: fixed;
     left: -100%;
     top: 0;
+    height: 100%;
     background: #040404;
     flex-direction: column;
     padding: 60px 20px;
     width: 100%;
+    z-index: 5;
   }
 }
 .header_right_close {
@@ -794,11 +796,13 @@ p, h1, h2, h3, h4, h5, h6 {
 .footer {
   border-top: 4px solid #FF1E1E;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media (max-width: 1024px) {
   .footer {
     border-top: 2px solid #FF1E1E;
     padding-top: 20px;
+    margin-bottom: 24px;
   }
 }
 .footer .container {
@@ -856,6 +860,11 @@ p, h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1024px) {
   .footer_top ul {
     gap: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .footer_top ul {
+    gap: 20px;
   }
 }
 .footer_top ul a {

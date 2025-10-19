@@ -1,10 +1,12 @@
 .footer {
   border-top: 4px solid $color-red;
   padding-top: 60px;
+  padding-bottom: 60px;
 
   @include media('lg') {
     border-top: 2px solid $color-red;
     padding-top: 20px;
+    margin-bottom: 24px;
   }
 
   .container {
@@ -60,6 +62,10 @@
 
       @include media('lg') {
         gap: 30px;
+      }
+
+      @include media('xs') {
+        gap: 20px;
       }
 
       a {
