@@ -521,6 +521,80 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.contact {
+  border-radius: 12px;
+  background: #FF1E1E;
+  padding: 24px 60px;
+  max-width: 1200px;
+  margin: 120px auto auto auto;
+}
+@media (max-width: 1024px) {
+  .contact {
+    padding: 24px 20px;
+    margin: 60px auto auto auto;
+  }
+}
+.contact h3 {
+  font-weight: 1000;
+  font-size: 60px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #040404;
+  margin-bottom: 48px;
+}
+.contact h3 span {
+  color: #FFFFFF;
+  display: inline;
+}
+@media (max-width: 1024px) {
+  .contact h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}
+.contact form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+@media (max-width: 1024px) {
+  .contact form {
+    gap: 12px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.contact form input {
+  background: #DEDEDE;
+  border-radius: 4px;
+  height: 50px;
+  padding: 5px 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #AFAFAF;
+}
+@media (max-width: 1024px) {
+  .contact form input {
+    height: 40px;
+  }
+}
+.contact form button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FF1E1E;
+  background: #FFFFFF;
+  border-radius: 4px;
+  height: 50px;
+}
+@media (max-width: 1024px) {
+  .contact form button {
+    height: 40px;
+  }
+}
+
 .footer {
   border-top: 4px solid #FF1E1E;
   padding-top: 60px;
