@@ -1,0 +1,155 @@
+// course
+.course {
+  .section_title {
+    margin-bottom: 48px;
+
+    @include media('lg') {
+      margin-bottom: 16px;
+    }
+  }
+
+  &_in {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 45px;
+
+    @include media('xl') {
+      gap: 66px;
+      flex-direction: column;
+    }
+  }
+
+  .course_media_icon {
+    display: none;
+
+    @include media('xl') {
+      display: flex;
+      position: absolute;
+      right: 10px;
+      bottom: -110px;
+      width: 200px;
+      z-index: 2;
+    }
+  }
+
+  .course_icon {
+    margin-top: 30px;
+
+    @include media('xl') {
+      display: none;
+    }
+  }
+
+  &_block {
+    position: relative;
+    border-radius: 15px;
+    padding: 20px 24px;
+    max-width: 500px;
+
+    @include media('xl') {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    @include media('lg') {
+      padding: 20px 10px;
+    }
+
+    h6 {
+      margin-bottom: 24px;
+      font-weight: 800;
+      font-size: 32px;
+      line-height: 100%;
+      text-decoration: underline;
+
+      @include media('lg') {
+        font-size: 20px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .line {
+    height: 0.5px;
+    width: 100%;
+    background: #BEBEBE;
+    margin: 24px 0;
+
+    @include media('lg') {
+      margin: 12px 0;
+    }
+  }
+
+  .before {
+    background: $color-white;
+
+    h6 {
+      color: $color-red;
+    }
+  }
+
+  .after {
+    background: $color-red;
+
+    h6 {
+      color: $color-white;
+    }
+
+    ul {
+      li {
+        span {
+          font-weight: 700;
+          font-size: 20px;
+          color: $color-white;
+
+          @include media('lg') {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  ul {
+    li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      span {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+        color: #263238;
+
+        @include media('lg') {
+          font-size: 14px;
+        }
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  .red_btn {
+    width: 334px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin: 40px auto 0 auto;
+
+    @include media('lg') {
+      margin: 20px auto 0 auto;
+    }
+
+    @include media('xs') {
+      width: 100%;
+    }
+  }
+}
+// course
