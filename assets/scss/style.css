@@ -550,6 +550,122 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.result_head {
+  margin-bottom: 48px;
+}
+@media (max-width: 1024px) {
+  .result_head {
+    margin-bottom: 16px;
+  }
+}
+.result_head p {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 16px;
+}
+@media (max-width: 1024px) {
+  .result_head p {
+    font-size: 20px;
+    margin-top: 12px;
+  }
+}
+.result_blocks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 36px;
+  max-width: 1088px;
+  margin: auto;
+}
+@media (max-width: 1024px) {
+  .result_blocks {
+    gap: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .result_blocks {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.result_block {
+  border: 1px solid #FF1E1E;
+  border-radius: 5px;
+  padding: 12px;
+}
+@media (max-width: 1024px) {
+  .result_block {
+    padding: 5px;
+  }
+}
+.result_block h6 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  text-align: center;
+  color: #FF1E1E;
+  margin-bottom: 8px;
+}
+@media (max-width: 1024px) {
+  .result_block h6 {
+    font-size: 32px;
+    margin-bottom: 4px;
+  }
+}
+.result_block p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: center;
+  color: #E6E6E6;
+}
+.result_block p b {
+  font-weight: 600;
+}
+@media (max-width: 1024px) {
+  .result_block p {
+    font-size: 16px;
+  }
+}
+.result blockquote {
+  margin: 28px auto 0 auto;
+  margin-top: 28px;
+  max-width: 490px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 100%;
+  color: #263238;
+  border-radius: 5px;
+  background: #E6E6E6;
+  padding: 8px;
+  border-left: 2px solid #FF1E1E;
+}
+@media (max-width: 1024px) {
+  .result blockquote {
+    margin: 16px auto 0 auto;
+    font-size: 16px;
+  }
+}
+.result .red_btn {
+  height: 50px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  width: 334px;
+  margin: 40px auto 0 auto;
+}
+@media (max-width: 1024px) {
+  .result .red_btn {
+    margin: 20px auto 0 auto;
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .result .red_btn {
+    width: 100%;
+  }
+}
+
 .platform .container {
   max-width: 800px;
 }
