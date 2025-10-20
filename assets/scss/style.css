@@ -457,6 +457,10 @@ p, h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1024px) {
   .header {
     padding: 20px 0;
+  }
+}
+@media (max-width: 1024px) {
+  .header.index_header {
     position: absolute;
     top: 0;
     width: 100%;
@@ -1249,6 +1253,11 @@ p, h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   position: relative;
 }
+@media (max-width: 1024px) {
+  .programm {
+    margin: 60px auto 0 auto;
+  }
+}
 .programm::before {
   content: "";
   position: absolute;
@@ -1360,10 +1369,22 @@ p, h1, h2, h3, h4, h5, h6 {
 .comment .section_title {
   margin-bottom: 48px;
 }
+@media (max-width: 1024px) {
+  .comment .section_title {
+    margin-bottom: 16px;
+  }
+}
+.comment .swiper-wrapper {
+  height: auto;
+}
+.comment .swiper-slide {
+  height: auto;
+}
 .comment_card {
   padding: 12px;
   border-radius: 7px;
   border: 1px solid #FF1E1E;
+  height: 100%;
 }
 .comment_card_head {
   display: flex;
@@ -1379,6 +1400,12 @@ p, h1, h2, h3, h4, h5, h6 {
   flex-shrink: 0;
   border-radius: 50%;
 }
+@media (max-width: 1024px) {
+  .comment_card_head img {
+    width: 44px;
+    height: 44px;
+  }
+}
 .comment_card_head h3 {
   font-weight: 700;
   font-size: 32px;
@@ -1386,11 +1413,21 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #FF1E1E;
   margin-bottom: 2px;
 }
+@media (max-width: 1024px) {
+  .comment_card_head h3 {
+    font-size: 20px;
+  }
+}
 .comment_card_head span {
   font-weight: 300;
   font-size: 22px;
   line-height: 100%;
   color: #FFFFFF;
+}
+@media (max-width: 1024px) {
+  .comment_card_head span {
+    font-size: 14px;
+  }
 }
 .comment_card .stars {
   display: flex;
@@ -1398,11 +1435,60 @@ p, h1, h2, h3, h4, h5, h6 {
   gap: 4px;
   margin: 20px 0 12px 0;
 }
+@media (max-width: 1024px) {
+  .comment_card .stars {
+    gap: 2px;
+    margin: 12px 0;
+  }
+}
+@media (max-width: 1024px) {
+  .comment_card .stars img {
+    width: 20px;
+    height: 20px;
+  }
+}
 .comment_card p {
   font-weight: 600;
   font-size: 20px;
   line-height: 100%;
   color: #E6E6E6;
+}
+@media (max-width: 1024px) {
+  .comment_card p {
+    font-size: 16px;
+  }
+}
+.comment_btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.comment_btns button {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: #FF1E1E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1024px) {
+  .comment_btns button {
+    width: 42px;
+    height: 42px;
+  }
+}
+@media (max-width: 1024px) {
+  .comment_btns button svg {
+    width: 9px;
+  }
+}
+.comment_btns button.comment-button-prev svg {
+  transform: rotate(180deg) translateX(2px);
+}
+.comment_btns .swiper-button-disabled {
+  opacity: 0;
 }
 
 .contact {

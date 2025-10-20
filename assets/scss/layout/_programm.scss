@@ -7,6 +7,10 @@
   background-size: cover;
   position: relative;
 
+  @include media('lg') {
+    margin: 60px auto 0 auto;
+  }
+
   &::before {
     content: '';
     position: absolute;
