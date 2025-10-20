@@ -660,6 +660,122 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 8px;
 }
 
+.programm {
+  max-width: 1534px;
+  margin: 120px auto 0 auto;
+  background-image: url("../images/program_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.programm::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(61, 61, 61, 0.4);
+}
+.programm_in {
+  position: relative;
+  z-index: 2;
+  padding: 28px 20px;
+}
+.programm_head {
+  max-width: 1000px;
+  margin: 0 auto 48px auto;
+}
+@media (max-width: 1024px) {
+  .programm_head {
+    margin: 0 auto 16px auto;
+    max-width: 600px;
+  }
+}
+.programm_head p {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 8px;
+}
+@media (max-width: 1024px) {
+  .programm_head p {
+    font-size: 18px;
+  }
+}
+.programm_cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px 48px;
+  max-width: 1236px;
+  margin: auto;
+}
+@media (max-width: 1280px) {
+  .programm_cards {
+    gap: 12px;
+  }
+}
+@media (max-width: 1024px) {
+  .programm_cards {
+    margin: 16px 0 0 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.programm_card {
+  padding: 24px 20px;
+  border-radius: 8px;
+  border: 0.5px solid #E6E6E6;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: #040404;
+}
+@media (max-width: 1024px) {
+  .programm_card {
+    padding: 12px 8px;
+  }
+}
+.programm_card h6 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 100%;
+  color: #FF1E1E;
+  margin-bottom: 16px;
+}
+@media (max-width: 1024px) {
+  .programm_card h6 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+}
+.programm_card_text {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+}
+.programm_card_text img {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  flex-shrink: 0;
+}
+.programm_card p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 100%;
+  color: #E6E6E6;
+}
+.programm_card p i {
+  display: block;
+  font-weight: 600;
+  font-style: italic;
+}
+@media (max-width: 1024px) {
+  .programm_card p {
+    font-size: 16px;
+  }
+}
+
 .contact {
   border-radius: 12px;
   background: #FF1E1E;
