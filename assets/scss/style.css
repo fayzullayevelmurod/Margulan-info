@@ -1357,6 +1357,54 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.comment .section_title {
+  margin-bottom: 48px;
+}
+.comment_card {
+  padding: 12px;
+  border-radius: 7px;
+  border: 1px solid #FF1E1E;
+}
+.comment_card_head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.comment_card_head img {
+  width: 67px;
+  height: 67px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+.comment_card_head h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  color: #FF1E1E;
+  margin-bottom: 2px;
+}
+.comment_card_head span {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+.comment_card .stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 20px 0 12px 0;
+}
+.comment_card p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  color: #E6E6E6;
+}
+
 .contact {
   border-radius: 12px;
   background: #FF1E1E;

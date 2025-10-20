@@ -28,25 +28,25 @@ items.forEach((item) => {
 // accordion
 
 
-let swiper = new Swiper(".treatmentsSwiper", {
-  slidesPerView: 1.10,
-  spaceBetween: 28,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+let swiper = new Swiper(".commentSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".comment-button-next",
+    prevEl: ".comment-button-prev",
   },
   breakpoints: {
     640: {
-      slidesPerView: 2.2,
-      spaceBetween: 28,
+      slidesPerView: 2,
+      spaceBetween: 20,
     },
     993: {
-      slidesPerView: 3.2,
-      spaceBetween: 28,
+      slidesPerView: 3,
+      spaceBetween: 40,
     },
     1200: {
-      slidesPerView: 3.6,
-      spaceBetween: 40,
+      slidesPerView: 3,
+      spaceBetween: 63,
     },
   },
 });
