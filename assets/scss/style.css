@@ -409,6 +409,24 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.section_title {
+  font-weight: 1000;
+  font-size: 60px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.section_title span {
+  color: #FF1E1E;
+}
+@media (max-width: 1024px) {
+  .section_title {
+    font-size: 29px;
+    line-height: 28px;
+  }
+}
+
 .red_btn {
   font-weight: 700;
   font-size: 20px;
@@ -530,6 +548,116 @@ p, h1, h2, h3, h4, h5, h6 {
   .header .burger {
     display: flex;
   }
+}
+
+.trening_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  margin-top: 48px;
+}
+@media (max-width: 1280px) {
+  .trening_cards {
+    gap: 12px;
+  }
+}
+@media (max-width: 1024px) {
+  .trening_cards {
+    margin-top: 16px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .trening_cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.trening_card {
+  border: 1px solid #FF1E1E;
+  border-radius: 5px;
+}
+.trening_card_img {
+  position: relative;
+  width: 332px;
+  height: 155px;
+  margin: auto;
+}
+@media (max-width: 1280px) {
+  .trening_card_img {
+    width: 100%;
+  }
+}
+.trening_card_img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.trening_card_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.trening_card_text {
+  padding: 12px;
+  margin-top: 4px;
+}
+.trening_card_text h6 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  color: #FF1E1E;
+  min-height: 64px;
+}
+@media (max-width: 1024px) {
+  .trening_card_text h6 {
+    font-size: 20px;
+    min-height: 40px;
+  }
+}
+.trening_card_text p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 100%;
+  color: #FFFFFF;
+  margin: 16px 0 12px;
+}
+@media (max-width: 1024px) {
+  .trening_card_text p {
+    font-size: 14px;
+    margin: 8px 0 12px;
+  }
+}
+.trening_card .play_btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FF1E1E;
+}
+.trening_card .play_btn img {
+  width: 22px;
+  height: 22px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.trening_card .red_btn {
+  height: 36px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 8px;
 }
 
 .contact {

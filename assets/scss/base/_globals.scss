@@ -77,6 +77,24 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.section_title {
+  font-weight: 1000;
+  font-size: 60px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-white;
+
+  span {
+    color: $color-red;
+  }
+
+  @include media('lg') {
+    font-size: 29px;
+    line-height: 28px;
+  }
+}
+
 .red_btn {
   font-weight: 700;
   font-size: 20px;
