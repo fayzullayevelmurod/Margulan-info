@@ -457,6 +457,10 @@ p, h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1024px) {
   .header {
     padding: 20px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
   }
 }
 .header .container {
@@ -496,7 +500,7 @@ p, h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     padding: 60px 20px;
     width: 100%;
-    z-index: 5;
+    z-index: 8;
   }
 }
 .header_right_close {
@@ -548,6 +552,106 @@ p, h1, h2, h3, h4, h5, h6 {
   .header .burger {
     display: flex;
   }
+}
+
+.home {
+  background: linear-gradient(180deg, #27181D 50%, #FF1E1E 100%);
+  padding: 44px 0;
+}
+@media (max-width: 1024px) {
+  .home {
+    padding: 0;
+  }
+}
+.home .home_media_img {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .home .home_media_img {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.home .container {
+  display: flex;
+  position: relative;
+  padding-right: 500px;
+}
+@media (max-width: 1024px) {
+  .home .container {
+    display: block;
+    padding-right: 20px;
+    padding: 35px 20px;
+  }
+}
+.home_text {
+  max-width: 1022px;
+}
+@media (max-width: 1024px) {
+  .home_text {
+    max-width: 100%;
+    text-align: center;
+    padding-top: 406px;
+    position: relative;
+    z-index: 2;
+  }
+}
+.home_text h1 {
+  font-weight: 1000;
+  font-size: 72px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+@media (max-width: 1024px) {
+  .home_text h1 {
+    font-size: 28px;
+  }
+}
+.home_text p {
+  margin: 20px 0 36px 0;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+@media (max-width: 1024px) {
+  .home_text p {
+    font-size: 20px;
+    line-height: 22px;
+    margin: 8px 0 30px 0;
+  }
+}
+.home_text .red_btn {
+  border-radius: 5px;
+  background: #FFFFFF;
+  color: #FF1E1E;
+  text-transform: uppercase;
+}
+@media (max-width: 1024px) {
+  .home_text .red_btn {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .home_img {
+    display: none;
+  }
+}
+.home_img img {
+  position: absolute;
+  bottom: -44px;
+  right: 20px;
+  min-width: 650px;
+  display: flex;
+  flex-shrink: 0;
 }
 
 .result_head {
