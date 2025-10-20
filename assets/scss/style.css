@@ -859,6 +859,141 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 8px;
 }
 
+.personal_in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+@media (max-width: 1024px) {
+  .personal_in {
+    gap: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .personal_in {
+    flex-direction: column;
+  }
+}
+.personal_img {
+  width: 355px;
+  height: 355px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  flex-shrink: 0;
+}
+.personal_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 768px) {
+  .personal_img {
+    width: 210px;
+    height: 210px;
+  }
+}
+.personal_text {
+  max-width: 600px;
+}
+@media (max-width: 768px) {
+  .personal_text {
+    max-width: 100%;
+  }
+}
+.personal_text span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  color: #E6E6E6;
+}
+@media (max-width: 1024px) {
+  .personal_text span {
+    font-size: 18px;
+  }
+}
+.personal_text h3 {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 100%;
+  color: #FFFFFF;
+  border-bottom: 2px solid #FF1E1E;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-top: 8px;
+}
+@media (max-width: 1024px) {
+  .personal_text h3 {
+    font-size: 24px;
+    padding-bottom: 8px;
+  }
+}
+.personal_text p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 100%;
+  color: #FEFEFE;
+  margin-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  .personal_text p {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+}
+.personal_text blockquote {
+  margin-bottom: 32px;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 100%;
+  color: #263238;
+  border-radius: 5px;
+  background: #E6E6E6;
+  position: relative;
+  padding: 27px 8px 15px 8px;
+}
+@media (max-width: 1024px) {
+  .personal_text blockquote {
+    font-size: 18px;
+    padding: 27px 8px;
+    margin-bottom: 16px;
+  }
+}
+.personal_text blockquote .icon_one {
+  position: absolute;
+  left: 8px;
+  top: 4px;
+}
+.personal_text blockquote .icon_two {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+}
+.personal_text a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 100%;
+  text-decoration: underline;
+  color: #FF1E1E;
+}
+@media (max-width: 1024px) {
+  .personal_text a {
+    font-size: 20px;
+    gap: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .personal_text a svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 .programm {
   max-width: 1534px;
   margin: 120px auto 0 auto;
