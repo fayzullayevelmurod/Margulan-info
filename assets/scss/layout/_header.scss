@@ -1,5 +1,7 @@
 .header {
   padding: 37px 0;
+  position: relative;
+  z-index: 3;
 
   @include media('lg') {
     padding: 20px 0;
